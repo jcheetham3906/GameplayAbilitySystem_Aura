@@ -10,11 +10,12 @@
  * 
  */
 UCLASS()
-class AURA_API AAuraCharacter : public AAuraCharacterBase
+class AURA_API AAuraCharacter : public AAuraCharacterBase // This means it inherits from AAuraCharacterBase
 {
 	GENERATED_BODY()
 
 public:
+	// This is creating a constructor.. So that we can construct the default parameters
 	AAuraCharacter();
 	
 };

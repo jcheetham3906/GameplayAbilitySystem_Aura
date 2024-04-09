@@ -19,8 +19,10 @@ protected:
 
 	virtual void BeginPlay() override;
 
+	// This is CREATING a variable that can be assigned in the BP Editor
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	TObjectPtr<USkeletalMeshComponent> Weapon;
 
+	// Google what a TObject Ptr is...
 
 };
