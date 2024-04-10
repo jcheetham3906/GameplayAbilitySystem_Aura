@@ -17,5 +17,13 @@ class AURA_API AAuraCharacter : public AAuraCharacterBase // This means it inher
 public:
 	// This is creating a constructor.. So that we can construct the default parameters
 	AAuraCharacter();
+
+	virtual void PossessedBy(AController* NewController) override;
+	virtual void OnRep_PlayerState() override;
+
+private:
+	void InitAbilityActorInfo();
 	
 };
+
+

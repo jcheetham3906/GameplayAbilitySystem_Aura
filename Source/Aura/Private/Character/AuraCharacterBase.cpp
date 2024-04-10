@@ -23,6 +23,11 @@ AAuraCharacterBase::AAuraCharacterBase()
 
 }
 
+UAbilitySystemComponent* AAuraCharacterBase::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
+}
+
 // Calls Begin Play.. Not sure why?
 void AAuraCharacterBase::BeginPlay()
 {
